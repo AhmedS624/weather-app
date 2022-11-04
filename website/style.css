@@ -1,0 +1,143 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --font-size: 1.3em;
+}
+
+body{
+    background:linear-gradient(to bottom,black,rgb(73, 108, 252));
+}
+::-webkit-scrollbar{
+    background:linear-gradient(to bottom,black,rgb(53, 88, 242));
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: white;
+}
+
+#app{
+    background:linear-gradient(to bottom,black,rgb(73, 108, 252));
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    padding-top:150px;
+    align-items: center;
+    min-height: 100vh;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    margin: 0;
+}
+
+.holder{
+    margin:5px;
+}
+
+.entry{
+    background:linear-gradient(to left,rgba(255, 255, 255, 0),rgb(27, 38, 61));
+    width:400px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--font-size);
+
+    
+}
+
+#entryHolder{
+
+}
+
+#date{
+
+}
+
+#temp{
+
+}
+
+#content{
+
+}
+
+.headline {
+    color:white;
+
+}
+.title{
+
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: var(--font-size);
+    font-weight: bold;
+    padding-bottom:3px;
+}
+
+input{
+    display:block;
+    background:rgba(34, 178, 218, 0);
+    border:white solid 2px;
+    border-radius: 5px;
+    color:white;
+    height: 60px;
+    width: 320px;
+    font-size:20px;
+    font-family: 'Oswald', sans-serif;
+}
+input:focus{
+    background-color: white;
+    color:black;
+    transition: 300ms ease;
+}
+
+button{
+    width: 300px;
+    height: 75px;
+    background: rgba(59, 74, 107, 0);
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: white solid 2px;
+    color:white;
+    box-shadow:none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+button:hover{
+    background-color: rgba(8, 240, 8, 0.521);
+    scale: 1.02;
+    transition:all ease 300ms;
+
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:rgba(34, 178, 218, 0);
+    border:white solid 2px;
+    color:white;
+    font-size: 20px;
+    padding-top:15px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+textarea:focus{
+    background-color: white;
+    color:black;
+    transition: 300ms ease;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
