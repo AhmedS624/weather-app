@@ -3,14 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Weather Journal</title>
-<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="style.css">
 <!--font awsome for icons-->
-<script src="https://kit.fontawesome.com/7fbd105467.js" crossorigin="anonymous"></script>
-<!-- googlr api for locations -->
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1R9ib5hFrp0aDOcFjFcjzj3y4cLPX_aw&libraries=places&callback=initMap">
-</script>
+<!-- <script src="https://kit.fontawesome.com/7fbd105467.js" crossorigin="anonymous"></script> -->
 
 <script defer src="app.js"></script>
 
@@ -22,7 +18,7 @@
 <div id = "app">
   <div class ="holder zip">
     <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
+    <input type="text" id="zip" placeholder="enter zip code here" >
   </div>
   <div class ="holder feel">
     <label for="feelings">How are you feeling today?</label>
@@ -31,12 +27,16 @@
   <button id="generate" type = "submit"> Generate </button>
   <div class ="holder entry">
     <h2 class = "title">Most Recent Entry</h2>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
   </div>
-  </div>
+    <div class="D-container">
+      <div id = "temp" class="info" >
+      </div>
+      <div id = "date" class="info" >
+      </div> 
+      <div id = "content" class="info">
+      </div>
+    </div>
+
   </div>
 
 </body>

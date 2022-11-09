@@ -1,17 +1,34 @@
-const api_key = process.env.openWeatherApiKey
 
-const call = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}'
 
 const express = require('express')
 const app = express()
 app.use(express.json())
 app.use(express.static('website'))
 
-app.post('/weather',(req,res) => {
-    console.log(req.body)
+
+
+app.post('/weather',AddData)
+
+let weatherData =[];
+
+app.get('/all',(req,res) =>{
+    res.send(weatherData)
+    // console.log(weatherData)
+    weatherData =[];
 })
 
+function AddData(req,res){
+    let projectData = {};
+  projectData = {
+    temp:req.body.temp,
+    Date:req.body.date,
+    feelings: req.body.I_am_feeling
+  }
 
+  weatherData.push(projectData)
+  res.send(weatherData)
+  // console.log(weatherData)
+}
 
 
 

@@ -46,20 +46,8 @@ body{
     
 }
 
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
+.info{
+    font-size: 1.5em;
 }
 
 .headline {
