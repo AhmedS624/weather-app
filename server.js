@@ -9,25 +9,22 @@ app.use(express.static('website'))
 
 app.post('/weather',AddData)
 
-let weatherData =[];
+let projectData = {};
 
 app.get('/all',(req,res) =>{
-    res.send(weatherData)
-    // console.log(weatherData)
-    weatherData =[];
+    res.send(projectData)
+    // console.log(projectData)
 })
 
 function AddData(req,res){
-    let projectData = {};
   projectData = {
     temp:req.body.temp,
     Date:req.body.date,
     feelings: req.body.I_am_feeling
   }
 
-  weatherData.push(projectData)
-  res.send(weatherData)
-  // console.log(weatherData)
+  // console.log(projectData)
+  res.send(projectData)
 }
 
 
