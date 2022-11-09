@@ -1,5 +1,5 @@
 /* Global Variables */
-const Key = 'd2848f5a2e04867432c8613ba7e43898'
+const Key = 'd2848f5a2e04867432c8613ba7e43898&units=imperial'
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
